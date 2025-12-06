@@ -173,13 +173,14 @@ p.light {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-links a {
@@ -446,7 +447,7 @@ p.light {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -706,4 +707,11 @@ p.light {
     text-align: center;
     color: #777;
     margin-top: 2rem;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.1rem;
+        white-space: normal;
+    }
 }
