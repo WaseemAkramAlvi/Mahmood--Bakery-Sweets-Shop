@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Bread Bakery | Luxury Artisan Breads & Pastries</title>
-    <meta name="description" content="Experience the finest artisan breads and pastries at Star Bread Bakery in Rahim Yar Khan. Luxury baking with a touch of elegance.">
-    
+    <meta name="description"
+        content="Experience the finest artisan breads and pastries at Star Bread Bakery in Rahim Yar Khan. Luxury baking with a touch of elegance.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" style="background-color: #f8f8f8; display: flex;">
         <div class="container nav-container">
             <a href="#" class="logo">Star Bread <span class="accent">Bakery</span></a>
             <div class="nav-links">
@@ -30,9 +35,17 @@
                 <a href="#cakes">Custom Cakes</a>
                 <a href="#contact">Visit Us</a>
             </div>
-            <a href="#order" class="btn btn-primary">Quick Order</a>
-            <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-actions">
+                <div class="nav-icons">
+                    <a href="#" id="cart-btn" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="#order" class="btn btn-primary">Quick Order</a>
+                </div>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -61,7 +74,7 @@
                 <h2>Signature Collections</h2>
                 <p>Handcrafted with passion and the finest ingredients.</p>
             </div>
-            
+
             <div class="grid-3 signature-grid">
                 <!-- Item 1 -->
                 <div class="card product-card">
@@ -72,7 +85,13 @@
                     <div class="card-body">
                         <h3>Artisan Sourdough</h3>
                         <p>Naturally leavened, crusty perfection with a soft, airy crumb.</p>
-                        <span class="price">Rs. 450</span>
+                        <div class="product-footer">
+                            <span class="price">Rs. 450</span>
+                            <button class="btn btn-sm btn-secondary add-to-cart" data-id="1"
+                                data-name="Artisan Sourdough" data-price="450"
+                                data-img="https://images.unsplash.com/photo-1585478259525-8763d441c29b?q=80&w=2070&auto=format&fit=crop">Add
+                                to Cart</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Item 2 -->
@@ -84,7 +103,13 @@
                     <div class="card-body">
                         <h3>Golden Croissants</h3>
                         <p>Layers of pure butter and flaky pastry, baked to golden perfection.</p>
-                        <span class="price">Rs. 250</span>
+                        <div class="product-footer">
+                            <span class="price">Rs. 250</span>
+                            <button class="btn btn-sm btn-secondary add-to-cart" data-id="2"
+                                data-name="Golden Croissants" data-price="250"
+                                data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=2026&auto=format&fit=crop">Add
+                                to Cart</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Item 3 -->
@@ -96,7 +121,13 @@
                     <div class="card-body">
                         <h3>Signature Chocolate Tart</h3>
                         <p>Rich dark chocolate ganache in a crisp, buttery shell.</p>
-                        <span class="price">Rs. 350</span>
+                        <div class="product-footer">
+                            <span class="price">Rs. 350</span>
+                            <button class="btn btn-sm btn-secondary add-to-cart" data-id="3"
+                                data-name="Signature Chocolate Tart" data-price="350"
+                                data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2089&auto=format&fit=crop">Add
+                                to Cart</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,7 +140,8 @@
         <div class="container text-center relative z-10">
             <span class="subtitle light">Chef's Selection</span>
             <h2 class="light">The Royal Cheesecake</h2>
-            <p class="light mb-4">A creamy, decadent masterpiece topped with fresh seasonal berries and a gold leaf finish.</p>
+            <p class="light mb-4">A creamy, decadent masterpiece topped with fresh seasonal berries and a gold leaf
+                finish.</p>
             <a href="#order" class="btn btn-primary">Order Now</a>
         </div>
     </section>
@@ -121,7 +153,8 @@
                 <div class="split-content">
                     <span class="subtitle">Celebrations</span>
                     <h2>Custom Cake Orders</h2>
-                    <p>Make your special moments unforgettable with our bespoke cakes. Designed to your vision, baked with love.</p>
+                    <p>Make your special moments unforgettable with our bespoke cakes. Designed to your vision, baked
+                        with love.</p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check"></i> Weddings & Anniversaries</li>
                         <li><i class="fas fa-check"></i> Birthdays & Milestones</li>
@@ -144,12 +177,33 @@
             <h2>Client Love</h2>
             <div class="testimonial-slider">
                 <div class="testimonial-item">
-                    <p class="quote">"The best bakery in Rahim Yar Khan! The croissants remind me of Paris. Absolutely stunning place."</p>
+                    <p class="quote">"The best bakery in Rahim Yar Khan! The croissants remind me of Paris. Absolutely
+                        stunning place."</p>
                     <cite>- Sarah A.</cite>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be injected here -->
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">Rs. 0</span>
+            </div>
+            <button class="btn btn-primary btn-block">Checkout</button>
+        </div>
+    </div>
 
     <!-- Location & Contact -->
     <section id="contact" class="section bg-dark text-light">
@@ -176,4 +230,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
